@@ -1,4 +1,4 @@
-export default function Home() {
+export default function UnderConstructionPage() {
     return (
         <main className="construction-page">
             <section className="construction-card" aria-labelledby="page-title">
