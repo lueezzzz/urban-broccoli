@@ -5,7 +5,6 @@ export default function Home() {
                 <header className="brand-mark">rian mabait</header>
 
                 <div className="hero-copy">
-                    <p className="eyebrow">portfolio loading</p>
                     <h1 id="page-title">Under Construction</h1>
                     <p>
                         I&apos;m building a sharper home for my work, notes, and
