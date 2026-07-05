@@ -2,7 +2,7 @@ export default function NotFound() {
     return (
         <>
             <div className="hero-copy">
-                <h1 id="page-title">Page Not Found</h1>
+                <h1 id="page-title">404 | Page Not Found</h1>
             </div>
             <div className="alien-orbit" aria-hidden="true">
                 <div className="pixel-alien">
