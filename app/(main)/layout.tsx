@@ -5,7 +5,9 @@ export default function MainLayout({
 }) {
     return (
         <>
-            <div>{children}</div>
+            <div className="min-h-scree">
+                <main className="mx-auto max-w-3xl px-6 py-12">{children}</main>
+            </div>
         </>
     );
 }
