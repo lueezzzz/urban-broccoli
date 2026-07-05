@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import UnderConstructionPage from "./under-construction/page";
 
 const geistSans = Geist({
     variable: "--font-geist-sans",
@@ -21,12 +22,17 @@ export default function RootLayout({
 }: Readonly<{
     children: React.ReactNode;
 }>) {
+    const isUnderConstruction =
+        process.env.NEXT_PUBLIC_UNDER_CONSTRUCTION === "true";
+
     return (
         <html
             lang="en"
             className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
         >
-            <body className="flex min-h-full flex-col">{children}</body>
+            <body className="flex min-h-full flex-col">
+                {isUnderConstruction ? <UnderConstructionPage /> : children}
+            </body>
         </html>
     );
 }
