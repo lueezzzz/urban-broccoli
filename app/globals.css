@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 :root {
-    --background: #eef0f3;
+    --background: #fffdf7;
     --foreground: #141414;
 }
 
@@ -10,6 +10,11 @@
     --color-foreground: var(--foreground);
     --font-sans: var(--font-geist-sans);
     --font-mono: var(--font-geist-mono);
+}
+
+html {
+    min-height: 100%;
+    background: var(--background);
 }
 
 body {
@@ -25,10 +30,12 @@ a {
 }
 
 .construction-page {
+    position: relative;
     display: flex;
     min-height: 100svh;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 
 .construction-card {
@@ -37,10 +44,7 @@ a {
     min-height: 100svh;
     width: 100%;
     overflow: hidden;
-    border: 1px solid rgba(20, 20, 20, 0.08);
-    border-radius: 1rem;
-    background: #fffdf7;
-    box-shadow: 0 1.25rem 4rem rgba(22, 24, 29, 0.12);
+    background: var(--background);
 }
 
 .brand-mark {
