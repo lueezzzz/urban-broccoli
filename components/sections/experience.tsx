@@ -49,10 +49,6 @@ export default function Experience() {
                                         >
                                             <span className="border-border bg-background absolute top-1.5 -left-[5px] size-2 rounded-full border" />
 
-                                            <h4 className="text-foreground text-sm font-semibold">
-                                                {role.title}
-                                            </h4>
-
                                             <p className="text-muted-foreground mt-2 text-xs tracking-wide uppercase">
                                                 {role.date}
                                             </p>
