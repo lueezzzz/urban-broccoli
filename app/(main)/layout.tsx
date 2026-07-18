@@ -1,13 +1,16 @@
+import Footer from "@/components/sections/footer";
+
 export default function MainLayout({
-    children,
+  children,
 }: {
-    children: React.ReactNode;
+  children: React.ReactNode;
 }) {
-    return (
-        <>
-            <div className="min-h-scree">
-                <main className="mx-auto max-w-3xl px-6 py-12">{children}</main>
-            </div>
-        </>
-    );
+  return (
+    <>
+      <div className="min-h-screen">
+        <main className="mx-auto max-w-3xl px-6 py-12">{children}</main>
+        <Footer />
+      </div>
+    </>
+  );
 }
